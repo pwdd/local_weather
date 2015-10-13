@@ -15,7 +15,7 @@ $(function() {
     lat = loc.split(",")[0];
     lon = loc.split(",")[1];
     
-    var weatherAPI = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial'
+    var weatherAPI = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&APPID=f668913bc3c52e0342e8aead28585c39'
     
     $.get(weatherAPI, function(response) {
       var temperature = response.main.temp;
